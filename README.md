@@ -39,7 +39,7 @@ To solve this problem, we can use a adaptive algorithm for the Gaussian move for
 an acceptance rate of 50% is ideal to efficiently sample the phase space of the system.  
 To keep the acceptance rate *R* at the level of 50%, we can establish a relationship bewteen *R* and sigma, by using a high cone width (σ = 60) in the first Monte Carlo (MC) step. From then on, every MC step, the cone width σ is recalculated by multiplying the current cone width σ by a factor obtained according to the acceptance rate in the previous MC step. It is possible to observe that a good approximation for the factor (*f*) as a function of the acceptance rate *R*at all temperatures is of the form:  
 *f* = 0.5/(0.5×2-*R*)  
-which means  σ'=*f*σ. When the acceptance rate *R* arrives 0.5, the *f* will equals to 1.0, the σ' will be the same to σ in MC steps.
+which means  σ'=*f*σ. When the acceptance rate *R* arrives 0.5, the *f* will equals to 1.0, the σ' will be the same to σ in MC steps. The acceptance rate *R* will always at the level of 50%, 
 
   
  [1]. J. Phys.: Condens. Matter 31 (2019) 095802 (10pp)
