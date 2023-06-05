@@ -42,7 +42,8 @@ To keep the acceptance rate *R* at the level of 50%, we can establish a relation
 *f* = 0.5/(0.5×2-*R*)  
   
 which means  σ'=*f*σ. When the acceptance rate *R* arrives 0.5, the *f* will equals to 1.0, the σ' will be the same to σ in MC steps. The acceptance rate *R* will always at the level of 50%. It is the most  efficient for magnetization reversal and for the convergence to equilibrium of the thermal averages and the coercivity in hysteresis calculations[1]. There are some results for magnetization curves for different temperature or external field.  
-![image](https://github.com/HKXie/Monte_Carlo_Heisenberg_model/blob/master/images/124_20size_1T.png)
+![image](https://github.com/HKXie/Monte_Carlo_Heisenberg_model/blob/master/images/124_20size_1T.png)  
+![image](https://github.com/HKXie/Monte_Carlo_Heisenberg_model/blob/master/images/MH.png)  
 
 
   
