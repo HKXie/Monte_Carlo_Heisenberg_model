@@ -34,5 +34,5 @@ Although the p(s) can not be calculted directly, the ratio of the state  p(s’)
 p(s’)/p(s) = exp(-H(s)/kT)/exp(-H(s')/kT)  
   
 which is easy to calculate.  
-How do we choose the right sigma? we can simply set it to a constant, while acceptance rate for the Markov chain sampling is difficult to contral, it will be too low or high 
+How do we choose the right sigma? we can simply set it to a constant, while acceptance rate for the Markov chain sampling is difficult to contral. It will be too low or high, which are unfavorable for effective sampling
 
