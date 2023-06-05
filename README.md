@@ -24,7 +24,7 @@ We can choose the proposal distribution p(s,s’) to be the Gaussian distributio
 q(s,s’)=N(s,σ)  
 q(s',s)=N(s',σ')  
   
-the s and s' is the spin direction at t and t+1 respectively, if we control the sigma(σ) and σ' to be the same, the a(s,s') can be simplified as  
+the s and s' is the spin direction at t and t+1 respectively, if we control the cone width sigma(σ) and σ' to be the same, the a(s,s') can be simplified as  
   
 *a*(s,s’) = min{1, p(s’)/p(s)}  
   
@@ -37,7 +37,8 @@ which is easy to calculate.
 How do we choose the right sigma(σ)? we can simply set it to a random constant, while acceptance rate for the Markov chain sampling is difficult to contral. It will be too low or high, which are unfavorable for effective sampling.  
 To solve this problem, we can use a adaptive algorithm for the Gaussian move for the proposal distribution transition in spin system [1]. A golden rule when using the Metropolis algorithm states that 
 an acceptance rate of 50% is ideal to efficiently sample the phase space of the system.  
-To keep the acceptance rate *R* at the level of 50%, we can establish a relationship bewteen *R* and sigma, by using a high cone width (σ = 60) in the first Monte Carlo step (MCS)
+To keep the acceptance rate *R* at the level of 50%, we can establish a relationship bewteen *R* and sigma, by using a high cone width (σ = 60) in the first Monte Carlo (MC) step. From then on, every MC step, the cone width σ is recalculated by multiplying the current cone width σ by a factor obtained according to the acceptance rate in the previous MC step. It is possible to observe that a good approximation for the factor (*f*) as a function of the acceptance rate *R*at all temperatures is of the form:  
+*f* = 0.5/(0.5×2-R)
 
   
  [1]. J. Phys.: Condens. Matter 31 (2019) 095802 (10pp)
