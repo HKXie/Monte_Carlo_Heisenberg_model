@@ -11,8 +11,8 @@ The beta is -1/kT, where k is Boltzmann constant, T is the temperature.
 We use Markov chain Monte Carlo (MCMC) to simulate the magnetization at different temperature or magnetic field.  
 We can't sample from the Boltzmann distribution directly for the whole spin system because the partial function it's difficult to calculate and the state space for system is infinite.  
 We use the Metropolis-Hastings algorithm to generate the Markov chain for the spin system. The state transition function can be written as:  
-P(x,x’) = q(x,x’)a(x,x’)  
-Where the q(x,x’) is proposal distribution and the a(x,x’) is acceptance distribution
+*p*(x,x’) = *q*(x,x’)*a*(x,x’)  
+Where the *q*(x,x’) is proposal distribution and the *a*(x,x’) is acceptance distribution
 
 
 
