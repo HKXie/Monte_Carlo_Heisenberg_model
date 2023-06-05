@@ -13,7 +13,7 @@ We can't sample from the Boltzmann distribution directly for the whole spin syst
 We use the Metropolis-Hastings algorithm to generate the Markov chain for the spin system. The state transition function can be written as:  
 *p*(x,x’) = *q*(x,x’)*a*(x,x’)  
 Where the *q*(x,x’) is proposal distribution and the *a*(x,x’) is acceptance distribution.  
-The a(x,x’) can be expressed as 
+The a(x,x’) can be expressed as  
 *a*(x,x’) = min{1, p(x’)q(x’,x)/p(x)p(x,x’)}  
 We can choose the proposal distribution p(x,x’) to be the Gaussian distribution form.  
 q(x(t),x’(t+1))=N(x(t),sigma)
