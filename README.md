@@ -35,5 +35,10 @@ p(s’)/p(s) = exp(-H(s)/kT)/exp(-H(s')/kT)
   
 which is easy to calculate.  
 How do we choose the right sigma? we can simply set it to a random constant, while acceptance rate for the Markov chain sampling is difficult to contral. It will be too low or high, which are unfavorable for effective sampling.  
+To solve this problem, we can use a adaptive algorithm for the Gaussian move for the proposal distribution transition in spin system [1] 
+
+  
+ [1]. J. Phys.: Condens. Matter 31 (2019) 095802 (10pp)
+
 
 
