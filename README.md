@@ -14,8 +14,11 @@ We use the Metropolis-Hastings algorithm to generate the Markov chain for the sp
 *p*(x,x’) = *q*(x,x’)*a*(x,x’)  
 Where the *q*(x,x’) is proposal distribution and the *a*(x,x’) is acceptance distribution.  
 The a(x,x’) can be expressed as  
-*a*(x,x’) = min{1, p(x’)q(x’,x)/p(x)p(x,x’)}  
+*a*(x,x’) = min{1, p(x’)q(x’,x)/p(x)q(x,x’)}  
 We can choose the proposal distribution p(x,x’) to be the Gaussian distribution form.  
 q(x,x’)=N(x,sigma)  
 q(x',x)=N(x',sigma')  
-the x and x' is the spin direction at t and t+1 respectively, if we control the sigma and sigma' to be the same
+the x and x' is the spin direction at t and t+1 respectively, if we control the sigma and sigma' to be the same, the a(x,x') can be simplified as  
+*a*(x,x’) = min{1, p(x’)/p(x)}  
+because the
+
