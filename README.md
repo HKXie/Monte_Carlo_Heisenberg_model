@@ -22,5 +22,6 @@ the s and s' is the spin direction at t and t+1 respectively, if we control the 
 *a*(s,s’) = min{1, p(s’)/p(s)}  
 because the proposal distribution q(s’,s) and q(s',s) are symmetric.  
 Although the p(s) can not be calculted directly, the ratio of the state  p(s’)/p(s) can be expressed as  
-p(s’)/p(s) = exp
+p(s’)/p(s) = exp(-H(s)/kT)/exp(-H(s')/kT)  
+which is easy to calculate
 
