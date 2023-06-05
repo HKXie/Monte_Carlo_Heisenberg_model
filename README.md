@@ -8,6 +8,6 @@ The Hamiltonian for the spin system in MnBi2Te4 can be written as:
 The spin system follows a Boltzmann distribution, expressed as:  
 ![image](https://github.com/HKXie/Monte_Carlo_Heisenberg_model/blob/master/images/Boltzmann%20distribution.png)  
 The beta is -1/kT, where k is Boltzmann constant, T is the temperature.  
-We use Markov chain Monte Carlo (MCMC) to simulate the magnetization at different temperature or magnetic field.
+We use Markov chain Monte Carlo (MCMC) and Metropolis-Hastings algorithm to simulate the magnetization at different temperature or magnetic field.
 
 
