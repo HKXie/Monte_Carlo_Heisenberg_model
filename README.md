@@ -20,5 +20,5 @@ q(x,x’)=N(x,sigma)
 q(x',x)=N(x',sigma')  
 the x and x' is the spin direction at t and t+1 respectively, if we control the sigma and sigma' to be the same, the a(x,x') can be simplified as  
 *a*(x,x’) = min{1, p(x’)/p(x)}  
-because the
+because the proposal distribution q(x’,x) and q(x',x) are symmetric
 
