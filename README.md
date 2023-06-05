@@ -16,8 +16,6 @@ Where the *q*(x,x’) is proposal distribution and the *a*(x,x’) is acceptance
 The a(x,x’) can be expressed as  
 *a*(x,x’) = min{1, p(x’)q(x’,x)/p(x)p(x,x’)}  
 We can choose the proposal distribution p(x,x’) to be the Gaussian distribution form.  
-q(x(t),x’(t+1))=N(x(t),sigma)
-
-
-
-
+q(x,x’)=N(x,sigma)  
+q(x',x)=N(x',sigma')  
+the x and x' is the spin direction at t and t+1 respectively, if we control the sigma and sigma' to be the same
