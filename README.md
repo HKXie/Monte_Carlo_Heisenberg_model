@@ -5,5 +5,7 @@ MnBi2Te4 is a topological material with A-type antiferromagnetic (AFM) structure
 The Hamiltonian for the spin system in MnBi2Te4 can be written as:  
 ![image](https://github.com/HKXie/Monte_Carlo_Heisenberg_model/blob/master/images/Heisenberg_model.png)  
 The spin system follows a Boltzmann distribution, expressed as:  
+![image](https://github.com/HKXie/Monte_Carlo_Heisenberg_model/blob/master/images/Boltzmann%20distribution.png)  
+The beta is -1/kT, where k is Boltzmann constant, T is the temperature
 
 
