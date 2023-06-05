@@ -23,5 +23,6 @@ the s and s' is the spin direction at t and t+1 respectively, if we control the 
 because the proposal distribution q(s’,s) and q(s',s) are symmetric.  
 Although the p(s) can not be calculted directly, the ratio of the state  p(s’)/p(s) can be expressed as  
 p(s’)/p(s) = exp(-H(s)/kT)/exp(-H(s')/kT)  
-which is easy to calculate
+which is easy to calculate.  
+How do we choose the right sigma? we can simply set it to a constant, while acceptance rate for the Markov chain sampling is
 
